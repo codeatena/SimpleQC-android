@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/login_margin"
+    android:paddingLeft="@dimen/login_margin"
+    android:paddingRight="@dimen/login_margin"
+    android:paddingTop="@dimen/login_margin"
+    tools:context="com.virtusventures.simpleqc.activity.LoginActivity"
+    android:background="@color/color_back"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/avatar"
+        android:id="@+id/avatar_imageview"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/id_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/avatar_imageview"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bottom_border">
+
+        <!-- INPUT -->
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/username_icon"
+            android:text=""
+            android:hint="User ID"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:textCursorDrawable="@android:color/white"
+            android:maxLines="1"/>
+
+        <!-- ICON -->
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/username_icon"
+            android:src="@drawable/ic_human"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/id_view"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bottom_border">
+
+        <!-- INPUT -->
+        <EditText
+            android:id="@+id/password_input"
+            android:inputType="textPassword"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/password_icon"
+            android:text=""
+            android:hint="Password"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:textCursorDrawable="@android:color/white"
+            android:maxLines="1"/>
+
+        <!-- ICON -->
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/password_icon"
+            android:src="@drawable/ic_password"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/password_view"
+        android:text= "Login"
+        fancy:fb_defaultColor="@color/color_button"
+        fancy:fb_radius="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:onClick="onLogin"
+        >
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Forgot password?"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/login_button"
+        android:background="@drawable/bottom_border"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>

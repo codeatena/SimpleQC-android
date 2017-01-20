@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.virtusventures.simpleqc.activity.QuestionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_button"
+        android:gravity="center_vertical"
+        android:id="@+id/topbar">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:text= ""
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            fancy:fb_defaultColor="@android:color/transparent"
+            android:id="@+id/button"
+            fancy:fb_fontIconSize="35sp"
+            fancy:fb_textColor="@android:color/white"
+            fancy:fb_fontIconResource = "@string/icon_left"
+            android:layout_centerVertical="true"
+            android:onClick="onBack"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/project_title_text"
+                android:text="Spin Master"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/project_number_text"
+                android:text="#2342324"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_above="@+id/bottom_bar">
+
+        <ListView
+            android:id="@+id/question_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/bottom_bar"
+        android:gravity="center_horizontal"
+        >
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/dailycomplete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text= "Daily QC Complete"
+            fancy:fb_defaultColor="@color/color_button"
+            fancy:fb_radius="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="onDailyComplete"
+            >
+        </mehdi.sakout.fancybuttons.FancyButton>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

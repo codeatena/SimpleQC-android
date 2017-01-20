@@ -1,0 +1,19 @@
+<resources>
+    <!--<string name="app_name">SimpleQC</string>-->
+
+    <string name="receiver">receiver</string>
+    <string name="inspector">inspector</string>
+
+    <string name="icon_camera">&#xf030;</string>
+    <string name="icon_down">&#xf107;</string>
+    <string name="icon_left">&#xf104;</string>
+
+    <string name="ok">OK</string>
+    <string name="search">Search</string>
+    <string name="title_activity_receive">ReceiveActivity</string>
+    <string name="title_activity_receiver">ReceiverActivity</string>
+    <string name="title_activity_project_list">ProjectListActivity</string>
+
+    <string name="project_search_null">cannot find project</string>
+
+</resources>

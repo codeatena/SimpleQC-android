@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_questionissue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.virtusventures.simpleqc.activity.QuestionissueActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_button"
+        android:id="@+id/topbar">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+        android:text= ""
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        fancy:fb_defaultColor="@android:color/transparent"
+        android:id="@+id/back_button"
+        fancy:fb_fontIconSize="35sp"
+        fancy:fb_textColor="@android:color/white"
+        fancy:fb_fontIconResource = "@string/icon_left"
+        android:onClick="onBack"
+        android:layout_centerVertical="true"
+        />
+
+        <TextView
+            android:text="How many have this issue?"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="40sp"
+            android:ems="10"
+            android:id="@+id/issue_editText"
+            android:layout_marginBottom="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/full_border_gray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_horizontal">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Done"
+            fancy:fb_defaultColor="@color/color_button"
+            fancy:fb_radius="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:onClick="onDone"
+            android:layout_marginBottom="20dp"
+            >
+        </mehdi.sakout.fancybuttons.FancyButton>
+
+    </LinearLayout>
+
+</RelativeLayout>
