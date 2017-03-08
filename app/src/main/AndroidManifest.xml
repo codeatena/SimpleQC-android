@@ -27,7 +27,6 @@
         <activity android:name=".activity.InspectActivity" />
         <activity
             android:name=".activity.ReceiverActivity"
-            android:label="@string/title_activity_receiver"
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.ProjectActivity" />
         <activity android:name=".activity.QuestionissueActivity"

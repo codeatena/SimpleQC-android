@@ -11,6 +11,7 @@ import com.virtusventures.simpleqc.R;
 import com.virtusventures.simpleqc.database.Issue;
 
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by mac on 26/12/2016.
@@ -36,7 +37,16 @@ public class QuestionAdapter extends ArrayAdapter<Issue> {
         Issue issue = values.get(position);
 
         TextView questionText = (TextView) rowView.findViewById(R.id.row_questiontext);
-        questionText.setText(issue.getQuestionEn());
+        if (Locale.getDefault().getLanguage().equals("zh"))
+        {
+            // chinese question
+            questionText.setText(issue.getQuestionCn());
+        }
+        else
+        {
+            // english question
+            questionText.setText(issue.getQuestionEn());
+        }
 
         TextView issueText = (TextView) rowView.findViewById(R.id.row_issuetext);
         issueText.setText(String.valueOf(issue.getIssueCount()));

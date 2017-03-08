@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
-            android:text= "Daily QC Complete"
+            android:text= "@string/dailiyqccomplete"
             fancy:fb_defaultColor="@color/color_button"
             fancy:fb_radius="20dp"
             android:paddingTop="10dp"

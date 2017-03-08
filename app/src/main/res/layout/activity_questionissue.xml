@@ -27,7 +27,7 @@
         />
 
         <TextView
-            android:text="How many have this issue?"
+            android:text="@string/howmanyissues"
             android:textSize="18sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         <mehdi.sakout.fancybuttons.FancyButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text= "Done"
+            android:text= "@string/done"
             fancy:fb_defaultColor="@color/color_button"
             fancy:fb_radius="20dp"
             android:paddingTop="10dp"

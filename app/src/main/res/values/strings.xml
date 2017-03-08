@@ -9,11 +9,20 @@
     <string name="icon_left">&#xf104;</string>
 
     <string name="ok">OK</string>
-    <string name="search">Search</string>
-    <string name="title_activity_receive">ReceiveActivity</string>
-    <string name="title_activity_receiver">ReceiverActivity</string>
-    <string name="title_activity_project_list">ProjectListActivity</string>
+    <string name="cancel">Cancel</string>
 
+    <string name="search">Search</string>
     <string name="project_search_null">cannot find project</string>
 
+    <string name="userid">User ID</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgotpassword">Forgot password?</string>
+
+    <string name="chooseproject">Choose Your Project</string>
+
+    <string name="howmanyissues">How many have this issue?</string>
+    <string name="done">Done</string>
+
+    <string name="dailiyqccomplete">Daily QC Complete</string>
 </resources>
