@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 import com.virtusventures.simpleqc.R;
 import com.virtusventures.simpleqc.database.Issue;
+import com.virtusventures.simpleqc.entity.Global;
 
 import java.util.List;
-import java.util.Locale;
 
 /**
  * Created by mac on 26/12/2016.
@@ -37,7 +37,7 @@ public class QuestionAdapter extends ArrayAdapter<Issue> {
         Issue issue = values.get(position);
 
         TextView questionText = (TextView) rowView.findViewById(R.id.row_questiontext);
-        if (Locale.getDefault().getLanguage().equals("zh"))
+        if (Global.getInstance().getCurrentUser().type.equals("2")) // china inspector
         {
             // chinese question
             questionText.setText(issue.getQuestionCn());

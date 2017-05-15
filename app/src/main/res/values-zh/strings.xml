@@ -2,7 +2,7 @@
     <!--<string name="app_name">SimpleQC</string>-->
 
     <string name="receiver">receiver</string>
-    <string name="inspector">inspector</string>
+    <string name="inspector">China Inspector</string>
 
     <string name="icon_camera">&#xf030;</string>
     <string name="icon_down">&#xf107;</string>
