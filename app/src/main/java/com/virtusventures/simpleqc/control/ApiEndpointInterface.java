@@ -16,7 +16,7 @@ import rx.Observable;
 public interface ApiEndpointInterface {
 
     @FormUrlEncoded
-    @POST("login")
+    @POST("signin")
     Observable<JsonObject> login(@Field("user_id") String userid , @Field("password") String password);
 
     @FormUrlEncoded

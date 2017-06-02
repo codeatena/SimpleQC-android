@@ -152,7 +152,8 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="20dp"
-        android:onClick="onReceived">
+        android:onClick="onReceived"
+        android:visibility="invisible">
     </mehdi.sakout.fancybuttons.FancyButton>
 
 </RelativeLayout>

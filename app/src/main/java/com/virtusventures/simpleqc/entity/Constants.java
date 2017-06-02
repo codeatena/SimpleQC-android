@@ -6,5 +6,7 @@ package com.virtusventures.simpleqc.entity;
 
 public class Constants {
 
+    public static String KEY_USERID = "userid";
+    public static String KEY_PASSWORD = "password";
 
 }

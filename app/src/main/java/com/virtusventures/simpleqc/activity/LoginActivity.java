@@ -14,11 +14,13 @@ import com.virtusventures.simpleqc.BuildConfig;
 import com.virtusventures.simpleqc.R;
 import com.virtusventures.simpleqc.control.APICallback;
 import com.virtusventures.simpleqc.control.APIService;
+import com.virtusventures.simpleqc.entity.Constants;
 import com.virtusventures.simpleqc.entity.Global;
 import com.virtusventures.simpleqc.entity.User;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import es.dmoral.prefs.Prefs;
 import rx.Subscription;
 
 public class LoginActivity extends AppCompatActivity {
@@ -37,6 +39,16 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         ButterKnife.bind(this);
+
+    }
+
+    @Override
+    protected void onStart() {
+
+        super.onStart();
+
+        usernameEdit.setText(Prefs.with(this).read(Constants.KEY_USERID, ""));
+        passwordEdit.setText(Prefs.with(this).read(Constants.KEY_PASSWORD, ""));
 
     }
 
@@ -66,6 +78,9 @@ public class LoginActivity extends AppCompatActivity {
                 hud.dismiss();
                 if (((JsonObject)jsonObject).get("state").getAsString().equals("success"))
                 {
+                    Prefs.with(LoginActivity.this).write(Constants.KEY_USERID, usernameEdit.getText().toString());
+                    Prefs.with(LoginActivity.this).write(Constants.KEY_PASSWORD, passwordEdit.getText().toString());
+
                     User user = new User((JsonObject)((JsonObject) jsonObject).get("result"));
                     Global.getInstance().setCurrentUser(user);
                     gotoMain();
