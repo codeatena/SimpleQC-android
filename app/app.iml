@@ -41,13 +41,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/receiverDebug/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/receiverDebug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/receiverDebug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/receiver/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/receiver/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/receiver/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/receiver/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/receiver/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/receiver/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/receiver/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testReceiverDebug/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testReceiverDebug/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testReceiverDebug/assets" type="java-test-resource" />
@@ -55,6 +48,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/testReceiverDebug/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testReceiverDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testReceiverDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/receiver/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/receiver/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/receiver/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/receiver/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/receiver/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/receiver/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/receiver/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/receiver/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/receiver/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/receiver/assets" type="java-resource" />
